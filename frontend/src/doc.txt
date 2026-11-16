@@ -1,0 +1,80 @@
+what is reactjs : 
+    Why React was created
+    Problems React solves
+    React as a UI library
+    Declarative UI versus imperative UI
+
+class vs component based archi
+    React's rendering model
+    client vs server side rendering 
+
+Setting Up a React Project
+- Creating a React application
+- Understanding the project directory structure
+- Understanding the application entry point
+- Understanding the root component
+- Mounting an application with createRoot
+- Understanding package.json and React dependencies
+- Development server and production build
+- Environment-specific configuration
+- Understanding development versus production behavior
+- Starting, building and previewing a React application
+- Introduction to Vite as a React development tool
+- Understanding React DevTools
+
+JSX — JavaScript XML
+    What JSX is and why React uses it
+    Fragments: <>...</>
+    Conditional expressions in JSX
+    Rendering arrays in JSX
+    Rendering elements dynamically
+    JSX and React element creation
+    Common JSX errors
+    Reading and debugging JSX compiler errors
+
+All about component
+    What React components are
+    Function components
+    Component naming conventions
+    Component exports and imports
+    Default and named component exports
+    
+    
+Component Composition
+
+what are props? 
+    properties of props 
+    Passing strings, numbers, booleans and objects
+    Passing arrays and functions as props
+    Default prop values using parameter defaults
+    Conditional props
+
+React event handlers:
+    Handling clicks and form submissions
+    Handling input changes
+
+react rendering and reconcilation :
+    Initial rendering
+    Re-rendering after state updates
+    Re-rendering when props change
+    Parent and child rendering behavior
+
+custom hook : 
+    useToggle
+    useCounter
+    useDebounce
+    useLocalStorage
+    usePrevious
+    useFetch for a simple learning example
+    useOnlineStatus
+    useWindowSize
+    useEventListener
+    useOutsideClick
+    useMediaQuery
+    useForm
+    usePagination
+    useIntersectionObserver
+    useCopyToClipboard
+
+    
+practice : Build a profile card using dynamic values.

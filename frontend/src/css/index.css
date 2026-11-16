@@ -1,0 +1,14 @@
+@import "tailwindcss";
+:root{
+  --bg:#fbfaf8; --surface:#fff; --alt:#f3f2ef; --text:#1b1b22; --muted:#5d5d6b; --border:#e6e4df;
+  --accent:#4f46e5; --accent-d:#4038c9; --accent-soft:#eceafd; --mint:#10b981; --mint-soft:#dcf7ec; --blue:#2563eb; --blue-soft:#e3edfe;
+  --dark:#1a1840; --r-sm:10px; --r:16px; --r-lg:24px;
+  --sh:0 1px 2px rgba(27,27,34,.05),0 8px 24px rgba(27,27,34,.06); --sh-lg:0 20px 50px rgba(79,70,229,.16);
+  --t:.25s ease; --pad:clamp(4rem,8vw,6.5rem); --fs-h1:clamp(2.2rem,5.5vw,4rem); --fs-h2:clamp(1.7rem,3.4vw,2.5rem);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
