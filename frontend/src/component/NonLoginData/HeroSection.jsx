@@ -24,14 +24,13 @@ const HeroSection = () => {
           <div className="btn-row flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4">
             <Link
               to="./login"
-              className="btn btn-primary btn-lg text-center"
-              href="#signup"
+              className="btn bg-brown-container btn-lg text-center"
             >
               Get Started
             </Link>
             <Link
               to="./plans"
-              className="btn btn-secondary bg-transparent hover:bg-[#272371] duration-300 ease-in-out btn-lg text-center"
+              className="btn btn-secondary bg-transparent hover:bg-brown-secondary duration-300 ease-in-out btn-lg text-center"
               href="#pricing"
             >
               Explore Plans
@@ -49,7 +48,7 @@ const HeroSection = () => {
             data-pos="0"
           >
             <div className="pc-top">
-              <span className="chip chip-ind">FRONTEND</span>
+              <span className="chip chip-ind bg-brown-container/30 text-brown-primary/80">FRONTEND</span>
               <span className="level">Beginner</span>
             </div>
             <h3 className="leading-[1.15] tracking-[-.02em]">

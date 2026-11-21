@@ -9,7 +9,7 @@ export default function CheckoutPage() {
 
   if (!selectedPlan) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#16052F] px-4">
+      <div className="flex min-h-screen items-center justify-center px-4">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-white">
             No plan selected
@@ -17,7 +17,7 @@ export default function CheckoutPage() {
 
           <button
             onClick={() => navigate("/plans")}
-            className="mt-6 rounded-full bg-[#A78BFA] px-7 py-3 font-semibold text-white"
+            className="mt-6 rounded-full bg-brown-secondary px-7 py-3 font-semibold text-white"
           >
             Choose a Plan
           </button>
@@ -27,15 +27,15 @@ export default function CheckoutPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#16052F] px-4 py-12">
+    <main className="flex min-h-screen items-center justify-center px-4 py-12">
 
       <div className="w-full max-w-lg rounded-[28px] bg-white p-8 shadow-2xl sm:p-10">
 
-        <p className="text-sm font-semibold uppercase tracking-widest text-[#A78BFA]">
+        <p className="text-sm font-semibold uppercase tracking-widest text-brown-secondary">
           Skillora Checkout
         </p>
 
-        <h1 className="mt-3 text-3xl font-bold text-[#17082F]">
+        <h1 className="mt-3 text-3xl font-bold text-brown-primary">
           Review your plan
         </h1>
 
@@ -45,7 +45,7 @@ export default function CheckoutPage() {
             Selected subscription
           </p>
 
-          <h2 className="mt-2 text-2xl font-bold text-[#17082F]">
+          <h2 className="mt-2 text-2xl font-bold text-brown-primary">
             {selectedPlan.name}
           </h2>
 
@@ -53,7 +53,7 @@ export default function CheckoutPage() {
             {selectedPlan.description}
           </p>
 
-          <p className="mt-5 text-xl font-bold text-[#A78BFA]">
+          <p className="mt-5 text-xl font-bold text-brown-secondary">
             {selectedPlan.price}
           </p>
 
@@ -61,14 +61,14 @@ export default function CheckoutPage() {
 
         <button
           onClick={() => navigate("/plans")}
-          className="mt-8 w-full rounded-full border border-[#A78BFA] py-3 font-semibold text-[#7951D6] hover:bg-purple-50"
+          className="mt-8 w-full rounded-full border border-brown-secondary py-3 font-semibold text-brown-primary hover:bg-brown-container/30"
         >
           Change Plan
         </button>
 
         <button
           disabled
-          className="mt-3 w-full cursor-not-allowed rounded-full bg-[#A78BFA] py-3 font-bold text-white opacity-50"
+          className="mt-3 w-full cursor-not-allowed rounded-full bg-brown-container py-3 font-bold text-white opacity-50"
         >
           Payment integration coming soon
         </button>

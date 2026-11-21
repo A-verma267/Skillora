@@ -43,7 +43,7 @@ const Project = () => {
             <p className="heading text-lg sm:text-xl lg:text-2xl font-bold tracking-wide py-2 wrap-break-word min-w-0">
               {projectName.name}
             </p>
-            <p className="bg-[#321a5898] py-2 px-2 sm:px-2 mt-0 sm:mt-2 cursor-pointer rounded-2xl hover:scale-105 shrink-0">
+            <p className="bg-brown-container py-2 px-2 sm:px-2 mt-0 sm:mt-2 cursor-pointer rounded-2xl hover:scale-105 shrink-0">
               <button onClick={()=> toggleWishlist(projectId)}>{wishlist.includes(projectId) ? <BookmarkIcon color="primary" className="w-full h-full" />  : <BookmarkIcon className="w-full h-full" />}</button>
               
             </p>
@@ -60,7 +60,7 @@ const Project = () => {
         {!pres && <>   
         <button onClick={()=>{
           pending.length <2 ? setAddtoDashBoard(true) : setCanNotBeAdded(true);
-        }} className="w-full sm:w-auto justify-center px-3 py-2.75 flex items-center gap-2 border border-gray-600 rounded-2xl cursor-pointer scale-100 hover:scale-102 duration-300 bg-[#251046]">UnLock the Project 
+        }} className="w-full sm:w-auto justify-center px-3 py-2.75 flex items-center gap-2 border border-gray-600 rounded-2xl cursor-pointer scale-100 hover:scale-102 duration-300 bg-brown-primary">UnLock the Project 
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24"
              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <rect x="4" y="11" width="16" height="10" rx="2"></rect>
@@ -80,7 +80,7 @@ const Project = () => {
               <>
                   <div key={topic.id ?? index}>
                     <div
-                      className="contheading flex items-center justify-between gap-2 bg-[#321a59b9] px-3 py-2 rounded-xl cursor-pointer text-sm sm:text-base"
+                      className="contheading flex items-center justify-between gap-2 bg-brown-container px-3 py-2 rounded-xl cursor-pointer text-sm sm:text-base"
                       onClick={() => setExpand(expand === index ? null : index)}
                     >
                       <div className="flex items-center gap-2 min-w-0">

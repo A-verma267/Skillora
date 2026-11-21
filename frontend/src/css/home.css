@@ -3,38 +3,38 @@
 :root{
   --bg:#100B1D; --bg-2:#19112B; --sidebar:#150E26; --card:#211735; --card-hi:#2A1D45;
   --accent:#A78BFA; --accent-2:#C4B5FD; --accent-deep:#7C5CE0;
-  --text:#F5F3FF; --muted:#B6AEC9; --border:rgba(196,181,253,.16); --border-hi:rgba(196,181,253,.4);
+  --text:#F5F3FF; --muted:#b9b6b6; --border:rgba(196,181,253,.16); --border-hi:rgba(196,181,253,.4);
   --star:#E9D8A6;
   --s-1:.5rem; --s-2:1rem; --s-3:1.5rem; --s-4:2.5rem; --s-5:4rem;
   --r-sm:10px; --r-md:18px; --r-lg:26px;
-  --shadow:0 10px 30px rgba(5,2,15,.4); --glow:0 0 0 1px var(--border-hi),0 14px 40px rgba(124,92,224,.22);
+  --shadow:0 10px 30px rgba(5,2,15,.4); --glow:0 0 0 1px var(--color-brown-secondary),0 14px 40px var(--color-brown-primary);
   --font:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
   --mono:ui-monospace,"SF Mono",Consolas,monospace;
   --sidebar-w:clamp(260px,24vw,320px);
 }
 .Homebtn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;padding:.7rem 1.4rem;border-radius:var(--r-sm);font-weight:600;font-size:.95rem;border:1px solid transparent;transition:transform .2s,background .2s,border-color .2s,box-shadow .2s}
 .Homebtn-primary{background:var(--accent);color:#17102A}
-.Homebtn-primary:hover{background:var(--accent-2);transform:translateY(-2px);box-shadow:0 8px 22px rgba(167,139,250,.35)}
+.Homebtn-primary:hover{background:var(--accent-2);transform:translateY(-2px);}
 .Homebtn-ghost{border-color:var(--border-hi);color:var(--text)}
-.Homebtn-ghost:hover{background:rgba(167,139,250,.12);border-color:var(--accent)}
+.Homebtn-ghost:hover{background: var(--color-brown-container);border-color:var(--muted)}
 .Homebtn-sm{min-height:40px;padding:.5rem 1.1rem;font-size:.9rem}
-.homelink-arrow{display:inline-flex;gap:.4rem;align-items:center;color:var(--accent-2);font-weight:600;font-size:.92rem}
+.homelink-arrow{display:inline-flex;gap:.4rem;align-items:center;color:var(--color-brown-primary);font-weight:600;font-size:.92rem}
 .homelink-arrow::after{content:"\2192";transition:transform .2s}
 .homelink-arrow:hover::after{transform:translateX(5px)}
 
 /* ===== 6. homeHERO ===== */
-.homeHero{position:relative;overflow:hidden;margin-top:var(--s-4);min-height:45vh;display:flex;align-items:center;padding:clamp(2rem,5vw,4rem);border:1px solid var(--border);border-radius:var(--r-lg);background:radial-gradient(circle at 85% 10%,rgba(124,92,224,.35),transparent 45%),linear-gradient(135deg,var(--bg-2),#1C1233)}
+.homeHero{position:relative;overflow:hidden;margin-top:var(--s-4);min-height:45vh;display:flex;align-items:center;padding:clamp(2rem,5vw,4rem);border-radius:var(--r-lg);}
 .homeHero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:44px 44px;opacity:.35;-webkit-mask-image:linear-gradient(120deg,transparent 35%,#000);mask-image:linear-gradient(120deg,transparent 35%,#000)}
 .homeHero-inner{position:relative;max-width:46rem}
-.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;color:var(--accent-2);margin-bottom:var(--s-2)}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;color:var(--color-brown-secondary);margin-bottom:var(--s-2)}
 .homeHero h1{font-size:clamp(2.1rem,4.6vw,3.9rem);line-height:1.08;letter-spacing:-.03em;font-weight:800}
-.hl{background:linear-gradient(90deg,var(--accent-2),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
-.homeHero p.lead{margin-top:var(--s-2);color:var(--muted);font-size:clamp(1rem,1.2vw,1.1rem);max-width:58ch}
+.hl{background:var(--color-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.homeHero p.lead{margin-top:var(--s-2); color: var(--muted);font-size:clamp(1rem,1.2vw,1.1rem);max-width:58ch}
 .homecta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:var(--s-3)}
 .homeHero .note{margin-top:var(--s-2);font-size:.88rem;color:var(--muted)}
 
 /* ===== 7. CARDS (shared) ===== */
-.homecard{position:relative;overflow:hidden;display:flex;flex-direction:column;padding:var(--s-3);background:var(--card);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s,border-color .25s}
+.homecard{position:relative;overflow:hidden;display:flex;flex-direction:column;padding:var(--s-3);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s,border-color .25s}
 .homecard:hover{transform:translateY(-4px);box-shadow:var(--glow)}
 .label{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:var(--accent-2)}
 .homecard h3{font-size:1.25rem;line-height:1.3;margin:.5rem 0}
@@ -47,30 +47,30 @@
 .homegrid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
 
 /* ===== 8. FEATURED PATHS ===== */
-.homepath{padding:var(--s-4) var(--s-3) var(--s-3);background:linear-gradient(160deg,var(--card-hi),var(--card) 60%)}
+.homepath{padding:var(--s-4) var(--s-3) var(--s-3);}
 .homepath h3{font-size:1.6rem}
 .homepath .deco{position:absolute;right:-30px;top:-30px;width:150px;height:150px;border-radius:50%;border:1px solid var(--border-hi);opacity:.5}
 .homepath .deco::after{content:"";position:absolute;inset:26px;border-radius:50%;border:1px dashed var(--border-hi)}
 .hometags{display:flex;flex-wrap:wrap;gap:.5rem;margin:var(--s-2) 0}
-.hometags li{padding:.25rem .7rem;border-radius:99px;font-size:.8rem;border:1px solid var(--border-hi);background:rgba(167,139,250,.1);color:var(--accent-2)}
+.hometags li{padding:.25rem .7rem;border-radius:99px;font-size:.8rem;border:1px solid var(--border-hi);background: var(--color-brown-container);color:var(--muted)}
 .homelevel{font-size:.85rem;color:var(--muted);margin-bottom:var(--s-3)}
 .homelevel b{color:var(--text);font-weight:600}
 
 /* ===== 9. FUNDAMENTALS ===== */
-.hometech-mark{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-family:var(--mono);font-weight:700;font-size:1.05rem;background:rgba(167,139,250,.14);border:1px solid var(--border-hi);color:var(--accent-2);margin-bottom:var(--s-2)}
+.hometech-mark{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-family:var(--mono);font-weight:700;font-size:1.05rem;background:var(--color-brown-container);border:1px solid var(--border-hi);color:var(--accent-2);margin-bottom:var(--s-2)}
 .homedots{display:flex;align-items:center;gap:.3rem;margin:var(--s-2) 0;font-size:.8rem;color:var(--muted)}
 .homedots i{width:22px;height:5px;border-radius:9px;background:rgba(196,181,253,.2)}
-.homedots i.on{background:var(--accent)}
+.homedots i.on{background:var(--color-brown-primary)}
 .homedots span{margin-left:.4rem}
 
 /* ===== 10. TESTIMONIALS (CSS-only scroll-snap slider) ===== */
-.hometrack{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2 * var(--s-3)) / 3);gap:var(--s-3);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;scrollbar-color:var(--accent-deep) transparent;scrollbar-width:thin}
+.hometrack{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2 * var(--s-3)) / 3);gap:var(--s-3);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;scrollbar-color:var(--color-brown-primary) transparent;scrollbar-width:thin}
 .homequote{scroll-snap-align:start;padding:var(--s-3);margin:0}
-.homequote::before{content:"\201C";font-size:3.5rem;line-height:.8;color:var(--accent);font-family:Georgia,serif}
+.homequote::before{content:"\201C";font-size:3.5rem;line-height:.8;color:var(--color-brown-primary);font-family:Georgia,serif}
 .homestars{color:var(--star);letter-spacing:.2em;font-size:.8rem;margin:.3rem 0 .6rem}
 .homequote blockquote{margin:0 0 var(--s-3);color:var(--text);font-size:.97rem}
 .homeperson{display:flex;align-items:center;gap:.8rem;margin-top:auto}
-.homeavatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent-deep));color:#17102A}
+.homeavatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:linear-gradient(135deg,var(--color-brown-secondary),var(--color-brown-primary));color:#17102A}
 .homeperson b{display:block;font-size:.95rem}
 .homeperson span{color:var(--muted);font-size:.83rem}
 .homedisclaimer{font-size:.8rem;color:var(--muted);margin-top:.5rem}

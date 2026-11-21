@@ -10,13 +10,13 @@ const Home = () => {
     <>
     
     {popup ? 
-    <main className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+    <main className="w-full  px-4 sm:px-6 lg:px-8 overflow-x-hidden">
       {/* <!-- homeHERO --> */}
-      <section className="homeHero py-10 sm:py-14 lg:py-20">
+      <section className="homeHero  py-10 sm:py-14 lg:py-20">
         <div className="homeHero-inner max-w-full">
           <p className="eyebrow text-xs sm:text-sm tracking-wide">YOUR JOURNEY. YOUR SKILLS. YOUR FUTURE.</p>
           <h1 id="homeHero-title" className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight wrap-break-word">
-            Become a <span className="hl">Monster</span> in &nbsp;
+            Become a <span className="hl ">Monster</span> in &nbsp;
             <span className="hl">Frontend Development.</span>
           </h1>
           <p className="lead text-base sm:text-lg max-w-3xl">
@@ -26,7 +26,7 @@ const Home = () => {
             matter in the real world.
           </p>
           <div className="homecta-row flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <NavLink to={"./project/1"} className="Homebtn Homebtn-primary w-full sm:w-auto text-center">
+            <NavLink to={"./project/1"} className="Homebtn bg-brown-primary w-full sm:w-auto text-center">
               Explore Learning Paths
             </NavLink>
           </div>
@@ -40,7 +40,7 @@ const Home = () => {
       <section className="relative overflow-hidden py-10 sm:py-12 lg:py-16">
         <div className="mb-6">
           <h2 className="text-2xl sm:text-3xl mb-2 font-semibold">Choose Your Learning Path</h2>
-          <p className="text-sm sm:text-base">
+          <p className="text-sm sm:text-base text-muted">
             Start with the fundamentals or dive into a complete development
             journey.
           </p>
@@ -69,7 +69,7 @@ const Home = () => {
             {/* <!-- TODO: replace with the Full Stack path page --> */}
             <NavLink
               to={"./project/0"}
-              className="Homebtn Homebtn-primary w-full sm:w-auto text-center"
+              className="Homebtn bg-brown-primary w-full sm:w-auto text-center"
             >
               Explore Path
             </NavLink>
@@ -96,7 +96,7 @@ const Home = () => {
             {/* <!-- TODO: replace with the React path page --> */}
             <NavLink
               to={"./project/6"}
-              className="Homebtn Homebtn-primary w-full sm:w-auto text-center"
+              className="Homebtn bg-brown-primary w-full sm:w-auto text-center"
             >
               Explore Path
             </NavLink>

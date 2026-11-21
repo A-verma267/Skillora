@@ -40,7 +40,7 @@ const UserContextProvider = (props) =>{
 //   localStorage.removeItem("wishlist");
 //   localStorage.removeItem("progProject");
 //   localStorage.removeItem("done");
-//   localStorage.removeItem("token");
+  localStorage.removeItem("token");
     useEffect(()=>{
         localStorage.setItem("done", JSON.stringify(done));
     },[done]);

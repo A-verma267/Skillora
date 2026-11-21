@@ -47,7 +47,7 @@ const Login = () => {
                         placeholder="name@example.com"
                         aria-describedby="email-error"
                         aria-invalid="false"
-                        className=" w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/30"
+                        className=" w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-brown-secondary focus:outline-none focus:ring-2 focus:ring-brown-secondary/30"
                       />
                     </div>
                     <p
@@ -72,7 +72,7 @@ const Login = () => {
                         placeholder=""
                         aria-describedby="password-error"
                         aria-invalid="false"
-                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/30 pr-16"
+                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-brown-secondary focus:outline-none focus:ring-2 focus:ring-brown-secondary/30 pr-16"
                       />
                       <button
                         type="button"
@@ -94,13 +94,13 @@ const Login = () => {
                       <input
                         id="remember"
                         type="checkbox"
-                        className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-600"
+                        className="h-4 w-4 rounded border-slate-300 text-brown-secondary focus:ring-brown-secondary"
                       />
                       Remember me
                     </label>
                     <a
                       href="forgot-password.html"
-                      className="text-sm font-medium text-indigo-700 underline-offset-2 hover:underline focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-indigo-600"
+                      className="text-sm font-medium text-brown-secondary underline-offset-2 hover:underline focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-brown-secondary"
                     >
                       Forgot password?
                     </a>
@@ -110,7 +110,7 @@ const Login = () => {
                     onSubmit={()=> handleSubmit}
                     data-label="Log in"
                     data-loading="Logging in…"
-                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-indigo-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-indigo-700 active:bg-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
+                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-brown-secondary/70 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-brown-secondary active:bg-brown-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-brown-secondary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     <svg
                       data-spinner
@@ -152,7 +152,7 @@ const Login = () => {
                         type="text"
                         required
                         placeholder="Asha Mehta"
-                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/30"
+                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-brown-secondary focus:outline-none focus:ring-2 focus:ring-brown-secondary/30"
                       />
                     </div>
                   </div>
@@ -170,7 +170,7 @@ const Login = () => {
                         type="email"
                         required
                         placeholder="name@example.com"
-                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/30"
+                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-brown-secondary focus:outline-none focus:ring-2 focus:ring-brown-secondary/30"
                       />
                     </div>
                   </div>
@@ -187,12 +187,12 @@ const Login = () => {
                         name="password"
                         type="password"
                         required
-                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/30 pr-16"
+                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-brown-secondary focus:outline-none focus:ring-2 focus:ring-brown-secondary/30 pr-16"
                       />
                       <button
                         type="button"
                         data-toggle="password"
-                        className="absolute inset-y-0 right-0 rounded-r-lg px-3.5 text-sm font-medium text-slate-600 hover:text-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
+                        className="absolute inset-y-0 right-0 rounded-r-lg px-3.5 text-sm font-medium text-slate-600 hover:text-brown-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-brown-secondary"
                       >
                         Show
                       </button>
@@ -267,14 +267,14 @@ const Login = () => {
                         type="password"
                         required
                         placeholder=""
-                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600/30 pr-16"
+                        className="block w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-slate-900 placeholder-slate-400 shadow-sm transition focus:border-brown-secondary focus:outline-none focus:ring-2 focus:ring-brown-secondary/30 pr-16"
                       />
                       <button
                         type="button"
                         data-toggle="confirm"
                         aria-pressed="false"
                         aria-label="Show password"
-                        className="absolute inset-y-0 right-0 rounded-r-lg px-3.5 text-sm font-medium text-slate-600 hover:text-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
+                        className="absolute inset-y-0 right-0 rounded-r-lg px-3.5 text-sm font-medium text-slate-600 hover:text-brown-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-brown-secondary"
                       >
                         Show
                       </button>
@@ -288,18 +288,18 @@ const Login = () => {
                         required
                         aria-describedby="terms-error"
                         aria-invalid="false"
-                        className="mt-0.5 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-600"
+                        className="mt-0.5 h-4 w-4 rounded border-slate-300 text-brown-secondary focus:ring-brown-secondary"
                       />
                       <span>
                         I agree to the &nbsp;
                         <a
-                          className="font-medium text-indigo-700 underline-offset-2 focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-indigo-600"
+                          className="font-medium text-brown-secondary underline-offset-2 focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-brown-secondary"
                         >
                           Terms of Service
                         </a>&nbsp;
                         and&nbsp;
                         <a
-                          className="font-medium text-indigo-700 underline-offset-2 focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-indigo-600"
+                          className="font-medium text-brown-secondary underline-offset-2 focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-brown-secondary"
                         >
                           Privacy Policy
                         </a>
@@ -309,7 +309,7 @@ const Login = () => {
                   </div>
                   <button
                     type="submit"
-                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-indigo-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-indigo-700 active:bg-indigo-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2 "
+                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-brown-secondary px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-brown-secondary active:bg-brown-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-brown-secondary focus-visible:ring-offset-2 "
                   >
                     <span data-label>Create account</span>
                   </button>
@@ -319,7 +319,7 @@ const Login = () => {
                 <p className="mt-6 text-center text-sm text-slate-600">
                   {state == "login" ? "Don't have an account? " :  "Already have an account? "}
                   <button onClick={()=> setState((state) => state == "login" ? "signup" : "login")}
-                    className="font-medium text-indigo-700 underline-offset-2 hover:underline focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-indigo-600"
+                    className="font-medium text-brown-primary underline-offset-2 hover:underline focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-brown-secondary"
                   >
                     {state == "login" ? "Sign up" : "Login"}
                   </button>

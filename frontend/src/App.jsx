@@ -26,9 +26,9 @@ const App = () => {
       <Navbar />
       <div className="h-17.5" />
       
-      <div className='relative min-h-full w-full flex flex-col md:flex-row md:justify-between'>
+      <div className='h-[86%] fixed w-[99%] left-1/2 -translate-x-1/2 mt-3 overflow-auto flex flex-col md:flex-row md:justify-between gap-2'>
         {token && <Sidebar /> }
-        <div className={`relative min-h-full ${token ? "w-full md:w-[85%]  md:left-[15%] " : "w-full"} `}>
+        <div className={`border-l border-l-white relative overflow-auto h-full ${token ? "w-full md:w-[84%] bg-brown-secondary rounded-xl  " : "w-full"} `}>
           <Routes>
             <Route path='/' element={token ? <Home /> : <NonLogin />} />
             {!token && <Route path='/login' element={<Login />} />}
@@ -44,7 +44,7 @@ const App = () => {
         </div>
       </div> 
 
-      <Footer />
+      {/* <Footer /> */}
     
     </>
 

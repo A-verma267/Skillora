@@ -16,7 +16,7 @@ const Dashboard = () => {
 
         <div className="mt-3 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between lg:px-4">
           {/* Stats card */}
-          <div className="flex w-full flex-col gap-3 rounded-2xl bg-[#2510469e] px-4 py-5 text-sm text-white sm:gap-4 sm:text-base lg:w-[40%]">
+          <div className="flex w-full flex-col gap-3 rounded-2xl bg-brown-container px-4 py-5 text-sm text-white sm:gap-4 sm:text-base lg:w-[40%]">
             <div>Topics Covered - {completed.length}</div>
             <div>Completed Project - {completed.length}</div>
             <div>Pending project - {pending.length}</div>

@@ -42,9 +42,9 @@ const weeklyActivity = [
 // Reusable statistic card
 function StatCard({ icon, label, value, subtitle }) {
   return (
-    <div className="rounded-2xl border border-purple-100 bg-white p-5 transition hover:-translate-y-1 hover:shadow-lg sm:p-6">
+    <div className="rounded-2xl border border-brown-container bg-white p-5 transition hover:-translate-y-1 hover:shadow-lg sm:p-6">
       <div className="flex items-center justify-between">
-        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-purple-100 text-xl text-[#A78BFA]">
+        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brown-container text-xl ">
           {icon}
         </div>
       </div>
@@ -64,65 +64,14 @@ function StatCard({ icon, label, value, subtitle }) {
   );
 }
 
-// Weekly activity component
-function ActivityChart() {
-  const maxHours = Math.max(...weeklyActivity.map((item) => item.hours));
 
-  return (
-    <div className="rounded-2xl bg-white p-6 shadow-sm">
-      <div className="mb-7">
-        <h3 className="text-lg font-bold text-[#17082F]">
-          Learning activity
-        </h3>
-        <p className="mt-1 text-sm text-[#9A91AC]">
-          Your learning consistency over the last 7 days
-        </p>
-      </div>
-
-      <div className="flex h-40 items-end justify-between gap-3">
-        {weeklyActivity.map((item) => (
-          <div
-            key={item.day}
-            className="flex h-full flex-1 flex-col items-center justify-end gap-2"
-          >
-            <span className="text-xs font-semibold text-[#9A91AC]">
-              {item.hours}h
-            </span>
-
-            <div className="flex h-28 w-full items-end justify-center">
-              <div
-                className="w-full max-w-10 rounded-t-lg bg-[#A78BFA] transition-all duration-300 hover:bg-[#8B65E8]"
-                style={{
-                  height: `${(item.hours / maxHours) * 100}%`,
-                  minHeight: "8px",
-                }}
-              />
-            </div>
-
-            <span className="text-xs text-[#9A91AC]">
-              {item.day}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      <p className="mt-5 border-t border-purple-100 pt-4 text-sm text-[#9A91AC]">
-        Total learning time:{" "}
-        <span className="font-bold text-[#17082F]">
-          {weeklyActivity.reduce((sum, item) => sum + item.hours, 0)} hours
-        </span>
-        {" "}this week
-      </p>
-    </div>
-  );
-}
 
 // Certificate component
 function CertificateCard({ certificate }) {
   return (
-    <div className="flex flex-col gap-4 rounded-2xl border border-purple-100 bg-white p-5 transition hover:shadow-lg sm:flex-row sm:items-center">
+    <div className="flex flex-col gap-4 rounded-2xl border border-brown-container bg-white p-5 transition hover:shadow-lg sm:flex-row sm:items-center">
 
-      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-purple-100 text-2xl">
+      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brown-container text-2xl">
         🏆
       </div>
 
@@ -157,7 +106,7 @@ export default function ProfilePage() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
-    <main className="min-h-screen bg-[#16052F] px-4 py-8 sm:px-6 lg:px-10">
+    <main className="min-h-screen px-4 py-8 sm:px-6 lg:px-10">
 
       <div className="mx-auto max-w-7xl">
 
@@ -167,7 +116,7 @@ export default function ProfilePage() {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
 
             {/* Avatar */}
-            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[#A78BFA] text-3xl font-bold text-white sm:h-24 sm:w-24">
+            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-brown-primary text-3xl font-bold text-white sm:h-24 sm:w-24">
               {student.username
                 .split(" ")
                 .map((word) => word[0])
@@ -181,7 +130,7 @@ export default function ProfilePage() {
                   {student.username}
                 </h2>
 
-                <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-[#7951D6]">
+                <span className="rounded-full bg-brown-container px-3 py-1 text-xs font-semibold ">
                   {plan}
                 </span>
               </div>
@@ -197,7 +146,7 @@ export default function ProfilePage() {
               <button
                 type="button"
                 onClick={() => alert("Connect your profile edit page here.")}
-                className="rounded-full border border-[#A78BFA] px-5 py-2.5 text-sm font-semibold text-[#7951D6] transition hover:bg-purple-50"
+                className="rounded-full border border-brown-secondary px-5 py-2.5 text-sm font-semibold text-brown-secondary transition hover:bg-purple-50"
               >
                 Edit Profile
               </button>
@@ -212,7 +161,7 @@ export default function ProfilePage() {
               key={"Overview"}
               type="button"
               className={`shrink-0 pb-4 text-sm font-semibold capitalize transition ${
-                "border-[#A78BFA] text-[#A78BFA]"
+                "border-brown-primary text-text"
                   
               }`}
             >
@@ -230,7 +179,7 @@ export default function ProfilePage() {
                   Your learning at a glance
                 </h2>
 
-                <p className="mt-1 text-sm text-purple-200/60">
+                <p className="mt-1 text-sm text-muted">
                   Here's how far you've come.
                 </p>
               </div>
@@ -252,7 +201,7 @@ export default function ProfilePage() {
                 My Certificates
               </h2>
 
-              <p className="mt-1 text-sm text-purple-200/60">
+              <p className="mt-1 text-sm text-muted">
                 Your achievements and completed learning paths.
               </p>
             </div>
@@ -270,11 +219,11 @@ export default function ProfilePage() {
               <div className="rounded-2xl bg-white px-6 py-16 text-center">
                 <div className="text-5xl">🏆</div>
 
-                <h3 className="mt-5 text-lg font-bold text-[#17082F]">
+                <h3 className="mt-5 text-lg font-bold text-text">
                   No certificates yet
                 </h3>
 
-                <p className="mt-2 text-sm text-[#9A91AC]">
+                <p className="mt-2 text-sm text-brown-secondary">
                   Complete your learning paths to earn your first certificate.
                 </p>
               </div>

@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   const pillBtn =
-    "text-white bg-[#251046] py-2.5 px-4 text-xs rounded-2xl cursor-pointer hover:scale-105 duration-300 ease-in-out whitespace-nowrap";
+    "text-white bg-brown-secondary py-2.5 px-4 text-xs rounded-2xl cursor-pointer hover:scale-105 duration-300 ease-in-out whitespace-nowrap";
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-1000 bg-[#170535] border-b border-white">
+    <nav className="w-[99%] fixed top-2 left-1/2 -translate-x-1/2 z-1000 bg-brown-secondary  border-b border-white rounded-xl">
       {/* Main bar */}
       <div className="flex items-center justify-between h-14 sm:h-16 px-3 sm:px-6 lg:px-10 max-w-screen-2xl mx-auto">
         {/* Logo (+ brand name on mobile) */}
@@ -38,7 +38,7 @@ const Navbar = () => {
           {token ? (
             <div
               onClick={() => go("/profile")}
-              className="bg-[#251046] p-1 rounded-full cursor-pointer"
+              className="bg-brown-secondary p-1 rounded-full cursor-pointer"
             >
               <img className="w-8 h-8 rounded-full" src="/image.png" alt="Profile" />
             </div>
@@ -85,7 +85,7 @@ const Navbar = () => {
           {token ? (
             <div
               onClick={() => go("/profile")}
-              className="flex items-center justify-center gap-2 bg-[#251046] py-2 rounded-2xl cursor-pointer text-white text-xs"
+              className="flex items-center justify-center gap-2 bg-brown-container py-2 rounded-2xl cursor-pointer text-white text-xs"
             >
               <img className="w-6 h-6 rounded-full" src="/image.png" alt="" />
               Profile
