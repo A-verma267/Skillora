@@ -28,7 +28,7 @@ const Project = () => {
   const progress = totalSubtopics ? Math.ceil((doneKeys.length / totalSubtopics) * 100) : 0;
   const [canNotBeAdded , setCanNotBeAdded] = useState(false);
 
-  console.log(projects);
+  // console.log(projects);
   useEffect(()=>{
     if(pres){
       return toggleProjProgress(projectId , progress);
@@ -108,7 +108,7 @@ const Project = () => {
                             <p
                               className="cursor-pointer "
                               title="Notes"
-                              onClick={() => navigate(`./${subtopic.notes}`)}
+                              onClick={() => navigate(`./${key}`)}
                             >
                               <NotesIcon />
                             </p>

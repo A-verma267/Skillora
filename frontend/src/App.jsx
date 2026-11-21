@@ -13,6 +13,7 @@ import Tutor from './pages/Tutor'
 import Profile from './pages/Profile'
 import CheckoutPage from './pages/Checkout'
 import Footer from './component/Footer'
+import Notes from './pages/Notes'
  
 const App = () => {
   const {token , setToken} = useContext(UserContext);
@@ -38,6 +39,7 @@ const App = () => {
             <Route path='/tutor' element={<Tutor />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/project/:projectId' element={<Project />} />
+            <Route path='/project/:projectId/:notesId' element={<Notes />} />
             
           </Routes>
 

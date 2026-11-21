@@ -32,18 +32,18 @@ const Navbar = () => {
 
         {/* Desktop actions */}
         <div className="hidden md:flex items-center gap-3">
-          <div onClick={() => go("/plans")} className={pillBtn}>
+          <div onClick={() => go("/plans")} className={`${pillBtn} border border-white/10`}>
             Explore Plan -&gt;
           </div>
           {token ? (
             <div
               onClick={() => go("/profile")}
-              className="bg-brown-secondary p-1 rounded-full cursor-pointer"
+              className="bg-brown-container p-1 rounded-full cursor-pointer"
             >
               <img className="w-8 h-8 rounded-full" src="/image.png" alt="Profile" />
             </div>
           ) : (
-            <div onClick={() => go("/login")} className={pillBtn}>
+            <div onClick={() => go("/login")} className={`${pillBtn} border border-white/10` }>
               Get Started
             </div>
           )}

@@ -40,7 +40,7 @@ const UserContextProvider = (props) =>{
 //   localStorage.removeItem("wishlist");
 //   localStorage.removeItem("progProject");
 //   localStorage.removeItem("done");
-  localStorage.removeItem("token");
+//   localStorage.removeItem("token");
     useEffect(()=>{
         localStorage.setItem("done", JSON.stringify(done));
     },[done]);
@@ -54,10 +54,10 @@ const UserContextProvider = (props) =>{
         localStorage.setItem("progProject" , JSON.stringify(projectProgress));
     },[projectProgress])
 
-    console.log(done);
-    console.log(projects);
-    console.log(wishlist);
-    console.log(projectProgress);
+    // console.log(done);
+    // console.log(projects);
+    // console.log(wishlist);
+    // console.log(projectProgress);
 
     const toggleDone = (projectId , key) =>{
         setDone((prev) =>{
